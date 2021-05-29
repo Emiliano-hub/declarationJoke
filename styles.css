@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+.Container {
+  /* background: #f9c2d4; */
+  background: #0b5fa5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-yes {
+  right: 55%;
+  position: absolute;
+}
+.button-no {
+  left: 55%;
+  position: absolute;
+}
+.btn {
+  width: 70px;
+  height: 50px;
+  background: #ff6763;
+  /* background: #e7638d; */
+  border-radius: 20px;
+  color: white;
+  font-size: 1.5em;
+  font-family: Impact;
+  border: none;
+  z-index: 1;
+}
+.button-yes:hover {
+  background: #c263e7;
+}
+.button-yes:active {
+  background: #df396e;
+}
+.svg-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.svg-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 425px) {
+}
