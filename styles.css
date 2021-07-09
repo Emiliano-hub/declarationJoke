@@ -1,26 +1,40 @@
 body {
   margin: 0;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 .Container {
+  display: flex;
+  font-family: Impact;
   background: #0b5fa5;
   min-height: 100vh;
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 .Principal-button {
   display: flex;
+  font-family: impact;
+  font-size: 2em;
+  font-weight: 400;
   background: #ccf600;
-  /* background: chartreuse; */
+  color: #0b5fa5;
   width: 300px;
   height: 200px;
-  z-index: 1;
+  z-index: 2;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
+  outline: none;
+  border: none;
   transition: all 0.5s;
 }
+.Principal-button:hover {
+  background: #ff6763;
+}
+.Principal-button:active {
+  background: #df396e;
+}
+
 .button-yes {
   right: 55%;
   position: absolute;
@@ -28,18 +42,18 @@ body {
 .button-no {
   left: 55%;
   position: absolute;
+  transition: all 0.2s;
 }
 .btn {
   width: 70px;
   height: 50px;
   background: #ff6763;
-  /* background: #e7638d; */
   border-radius: 20px;
   color: white;
   font-size: 1.5em;
   font-family: Impact;
   border: none;
-  z-index: 0;
+  z-index: 1;
   outline: none;
 }
 .button-yes:hover {
@@ -52,11 +66,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 }
 .svg-2 {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 0;
 }
 @media screen and (max-width: 425px) {
 }
